@@ -1,0 +1,35 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+h1, h2 {
+    margin: 0px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    height: 100%;
+}
+li {
+    float: left;
+    height: 100%;
+}
+#toplinks li button {
+    height: 100%;
+    cursor: pointer;
+}
+.home {
+    height: 90vh;
+    padding-top: 10vh;
+    text-align: center;
+}
+#masthead {
+    width: 100%;
+    position: absolute;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+#name {
+    font-size: 10vw;
+}
