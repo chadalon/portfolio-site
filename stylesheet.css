@@ -1,27 +1,49 @@
+@font-face {
+    font-family: poppins;
+    src: url(./fonts/Poppins/Poppins-Black.ttf);
+}
+@font-face {
+    font-family: poppins-thin;
+    src: url(./fonts/Poppins/Poppins-Thin.ttf);
+}
+@font-face {
+    font-family: poppins-regular;
+    src: url(./fonts/Poppins/Poppins-Regular.ttf)
+}
+:root {
+    --link-height: 1em;
+}
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: poppins-regular, Arial;
     margin: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-size: var(--link-height);
 }
 h1, h2 {
     margin: 0px;
 }
 ul {
+    padding: 0;
     list-style-type: none;
     margin: 0;
-    height: 100%;
+    display: flex;
+    gap: 1vw;
+    align-items: center;
 }
 li {
     float: left;
-    height: 100%;
 }
-#toplinks li button {
-    height: 100%;
-    cursor: pointer;
-}
-.home {
+#home {
     height: 90vh;
     padding-top: 10vh;
     text-align: center;
+    background-image: url(./media/Portfolio\ Site\ Bckg.png);
+    background-position: center;
+    background-size: cover;
+    /* background-color: black; */
 }
 #masthead {
     width: 100%;
@@ -32,4 +54,61 @@ li {
 }
 #name {
     font-size: 10vw;
+    font-family: poppins-thin;
+}
+#homeDesc {
+    font-size: 1.5vw;
+}
+footer {
+    height: 20vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 3rem 0rem 3rem;
+}
+.sectionTitle {
+    text-align: center;
+    font-size: 2.1rem;
+}
+section {
+    padding: 10rem 5rem;
+}
+.sectionDesc {
+    text-align: center;
+}
+.skill {
+    display: inline-block;
+    border-radius: .4rem;
+    background-color: gray;
+    margin: .5rem;
+}
+.skill span {
+    padding: 1rem;
+    display: inline-block;
+}
+
+.project {
+    display: flex;
+    border: 1px solid black;
+}
+#footerContainer {
+    display: flex;
+    justify-content: space-between;
+}
+#footerLinks {
+    display: flex;
+    justify-content: space-evenly;
+}
+#footerLinks a svg{
+    width: 24px;
+    height: 24px;
+}
+#bottomFooter {
+    font-size: .75rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid gray;
 }
