@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I'm a software engineer who loves to solve problems and create">
+    <meta name="author" content="Chad Malmrose">
     <title>Chad Malmrose</title>
     <link rel="stylesheet" href="stylesheet.css">
     <script src="./main.js" defer></script>
@@ -39,17 +41,21 @@
     </section>
     <section id="about">
         <h1 class="sectionTitle">About Me</h1>
+        <div class="sectionTitleShape"></div>
         <div id="aboutContainer">
             <div id="aboutDesc">
                 <h2>Who I Am</h2>
                 <p>
-                    I'm a software engineer, student, and musician.
+                    I'm a software engineer and student who loves trying and mastering new things.
                     Coding has interested me since I first learned about it, and I really wanted to pursue it after my parents bought me "Computer Programming for Dummies" in 7th grade.
                     <br>
                     I love to design and implement programs, work with people, and learn!
                 </p>
                 <p>
                     I'm open to a job or internship that can allow me to push myself, learn, and contribute to something impactful.
+                </p>
+                <p>
+                    Let's connect on <a href="https:/linkedin.com/in/chadmalmrose">Linkedin</a>!
                 </p>
 
             </div>
@@ -63,25 +69,55 @@
     </section>
     <section id="projects">
         <h1 class="sectionTitle">Projects</h1>
-        <p class="sectionDesc">Here are some of my most recent personal projects.</p>
+        <div class="sectionTitleShape"></div>
+        <p class="sectionDesc">Here are some of my most recent personal projects</p>
         <div id="projectsContainer">
             <div class="project">
                 <div class="projectImg"></div>
                 <div class="projectDesc">
-                    <h2 class="projectTitle">Blackjack Odds</h2>
+                    <u><h2 class="projectTitle">Blackjack Odds</h2></u>
                     <p>
                         Blackjack Odds tests the best strategy to play given any casino/game rule preconditions. It simulates games and tests every possible move
                         for each round, storing the results in a file, until the user stops the program. This file can then be interpreted to determine the best
                         chance the player has at winning depending on their hand and the dealer's hand. I created this project because I love working with data
-                        and I wanted to test my abilities and see for myself how accurate the BlackJack "cheat sheets" are.
+                        and I wanted to test my abilities and see for myself how accurate the BlackJack "cheat sheets" are. This project was made with JavaScript and uses Node.js.
                     </p>
                     <a href="https://github.com/chadalon/Blackjack-Odds" class="projectLink">View on GitHub</a>
                 </div>
             </div>
+            <div class="project">
+                <div class="projectImg"></div>
+                <div class="projectDesc">
+                    <u><h2 class="projectTitle">AlgoTrade</h2></u>
+                    <p>
+                        An Electron app developed for designing and backtesting trading strategies for cryptocurrency and
+                        stocks without the requirement of knowing how to code. This app is successfully integrated with the Kraken, ETrade,
+                        and TD Ameritrade APIs for connecting to real-time market and account data. I chose Electron for this because I wanted to learn this technology
+                        along with improve my JavaScript skills.
+                    </p>
+                    <a href="https://github.com/chadalon/AlgoTrade" class="projectLink">View on GitHub</a>
+                </div>
+            </div>
+            <p>
+                Check out more of my projects on <a href="https://github.com/chadalon">GitHub</a>!
+            </p>
         </div>
+
     </section>
     <section id="experience">
         <h1 class="sectionTitle">Experience</h1>
+        <div class="sectionTitleShape"></div>
+        <p class="sectionDesc">Some of my education and work history</p>
+        <div id="experienceContainer">
+            <div id="education">
+                <h2>B.S. Computer Science - Utah Valley University</h2>
+                <p>
+                    I am currently pursuing a bachelor's degree in computer science at UVU. I came back to school in the spring 2022 semester after a two-year break.
+                    Since I have been back I've gotten a 4.0 gpa every semester. I have been enjoying the projects and content in my classes as well as making lifelong connections
+                    with my professors and classmates.
+                </p>
+            </div>
+        </div>
 
     </section>
     <footer>
@@ -89,11 +125,14 @@
             <div id="footerAbout">
                 <h2>Chad Malmrose</h2>
                 <p>Student and Developer</p>
+                <div id="musicPlug">
+                    <span>Like music? Check out <a href="https://chadalon.com">chadalon.com</a></span>
+                </div>
             </div>
             <div>
                 <h2>Social</h2>
                 <div id="footerLinks">
-                    <a href="https://linkedin.com/in/chad-malmrose">
+                    <a href="https://linkedin.com/in/chadmalmrose">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" fill="#fff"/></svg>
                     </a>
                     <a href="https://github.com/chadalon">
@@ -105,6 +144,7 @@
         <div id="bottomFooter">
             <span>Created by Chad Malmrose</span>
         </div>
+        
     </footer>
 </body>
 </html>

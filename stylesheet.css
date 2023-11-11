@@ -8,10 +8,12 @@
 }
 @font-face {
     font-family: poppins-regular;
-    src: url(./fonts/Poppins/Poppins-Regular.ttf)
+    src: url(./fonts/Poppins/Poppins-Regular.ttf);
 }
 :root {
     --link-height: 1em;
+    --margin-under-section-desc: 60px;
+    --blue-color: royalblue;
 }
 body {
     font-family: poppins-regular, Arial;
@@ -21,7 +23,10 @@ body {
 a {
     text-decoration: none;
     color: black;
-    font-size: var(--link-height);
+    /* font-size: var(--link-height); */
+}
+#toplinks a {
+    font-size: 1.2rem;
 }
 h1, h2 {
     margin: 0px;
@@ -31,7 +36,7 @@ ul {
     list-style-type: none;
     margin: 0;
     display: flex;
-    gap: 1vw;
+    gap: 2vw;
     align-items: center;
 }
 li {
@@ -59,7 +64,7 @@ header {
     background-color: white;
 }
 #intro {
-    padding: 100px 100px;
+    padding: 100px 5vw;
 }
 #name {
     font-size: 8rem;
@@ -73,17 +78,31 @@ header {
     font-size: 2.1rem;
 }
 section {
-    padding: 10rem 5rem;
+    padding: 0 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10rem 0;
+}
+section a {
+    color: var(--blue-color);
 }
 .sectionDesc {
     text-align: center;
+    margin-top: 0;
+    color: #555;
+    margin-bottom: var(--margin-under-section-desc);
 }
-#about {
-    /* box-shadow: -100px 200px 100px rgba(255, 255, 255, .9) */
+.sectionTitleShape {
+    background-color: var(--blue-color);
+    height: .4rem;
+    width: 5rem;
+    border-radius: 1rem;
+    margin: .3rem 0 1rem 0;
 }
+/* #about {
+    box-shadow: -100px 200px 100px rgba(255, 255, 255, .9)
+} */
 .skill {
     display: inline-block;
     border-radius: .4rem;
@@ -94,10 +113,15 @@ section {
     padding: 1rem;
     display: inline-block;
 }
-
+#projects .sectionDesc {
+    margin: 0;
+}
+#projectsContainer > p {
+    margin-top: var(--margin-under-section-desc);
+}
 .project {
     display: flex;
-    border: 1px solid black;
+    margin-top: var(--margin-under-section-desc);
 }
 .projectDesc {
     display: flex;
@@ -105,13 +129,13 @@ section {
 }
 .projectLink {
     background-color: black;
-    color: #bbb;
+    color: #eee;
     padding: 1rem 1.5rem;
     border-radius: 5px;
     align-self: start;
 }
 footer {
-    height: 20vh;
+    min-height: 20vh;
     background-color: black;
     color: white;
     display: flex;
@@ -122,6 +146,12 @@ footer {
 footer > div {
     width: 100%;
 }
+#footerAbout p {
+    margin: .5em 0;
+}
+#footerContainer h2 {
+    border-bottom: 2px solid white;
+}
 #footerContainer {
     display: flex;
     justify-content: space-between;
@@ -129,18 +159,29 @@ footer > div {
 #footerLinks {
     display: flex;
     justify-content: space-evenly;
+    margin-top: .9em;
 }
 #footerLinks a svg{
     width: 24px;
     height: 24px;
 }
+#musicPlug {
+    font-size: .7rem;
+    margin: .4em 0;
+}
+#musicPlug, #musicPlug a {
+    color: #ddd;
+}
 #bottomFooter {
     font-size: .75rem;
-    height: 100%;
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     border-top: 1px solid gray;
+}
+#bottomFooter span {
+    margin: 2rem 0;
 }
 
 
@@ -157,11 +198,14 @@ footer > div {
 }
 @media only screen and (max-width: 950px) {
     #name {
-        font-size: 10vw;
+        font-size: 13vw;
     }
 }
 @media only screen and (max-width: 600px) {
     #home {
         height: auto;
     }
+    /* #toplinks a {
+        font-size: 
+    } */
 }
