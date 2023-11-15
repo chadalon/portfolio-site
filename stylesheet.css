@@ -135,7 +135,6 @@ section a {
     align-self: start;
 }
 footer {
-    min-height: 20vh;
     background-color: black;
     color: white;
     display: flex;
@@ -149,12 +148,18 @@ footer > div {
 #footerAbout p {
     margin: .5em 0;
 }
+#footerAbout {
+    order: 1;
+}
 #footerContainer h2 {
     border-bottom: 2px solid white;
 }
 #footerContainer {
     display: flex;
     justify-content: space-between;
+}
+#footerLinksContainer {
+    order: 2;
 }
 #footerLinks {
     display: flex;
@@ -171,6 +176,9 @@ footer > div {
 }
 #musicPlug, #musicPlug a {
     color: #ddd;
+}
+#musicPlug a {
+    text-decoration: underline;
 }
 #bottomFooter {
     font-size: .75rem;
@@ -205,7 +213,40 @@ footer > div {
     #home {
         height: auto;
     }
+    section {
+        padding: 0 10vw;
+        margin: 5rem 0;
+    }
     /* #toplinks a {
         font-size: 
     } */
+}
+@media only screen and (max-width: 450px) {
+    section {
+        padding: 0 1rem;
+    }
+    footer {
+        font-size: 0.8rem;
+        padding: 4rem 2rem 0 2rem;
+    }
+    #bottomFooter span {
+        margin: 1.5rem 0;
+    }
+    .sectionTitle {
+        font-size: 1.8rem;
+    }
+    .sectionTitleShape {
+        /* TODO ssmaller */
+    }
+    #footerContainer {
+        flex-direction: column;
+    }
+    #footerLinksContainer {
+        order: initial;
+    }
+    #footerAbout {
+        order: initial;
+        margin-top: 1.5rem;
+    }
+
 }
