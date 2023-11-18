@@ -28,6 +28,9 @@ a {
 #toplinks a {
     font-size: 1.2rem;
 }
+.linkSeparator {
+    color: #bbb;
+}
 h1, h2 {
     margin: 0px;
 }
@@ -146,13 +149,14 @@ footer > div {
     width: 100%;
 }
 #footerAbout p {
-    margin: .5em 0;
+    margin: 1rem 0;
 }
 #footerAbout {
     order: 1;
 }
 #footerContainer h2 {
     border-bottom: 2px solid white;
+    width: fit-content;
 }
 #footerContainer {
     display: flex;
@@ -172,7 +176,7 @@ footer > div {
 }
 #musicPlug {
     font-size: .7rem;
-    margin: .4em 0;
+    margin: 2rem 0 1rem 0;
 }
 #musicPlug, #musicPlug a {
     color: #ddd;
@@ -217,13 +221,13 @@ footer > div {
         padding: 0 10vw;
         margin: 5rem 0;
     }
-    /* #toplinks a {
-        font-size: 
-    } */
 }
 @media only screen and (max-width: 450px) {
     section {
         padding: 0 1rem;
+    }
+    #toplinks a {
+        font-size: 1rem;
     }
     footer {
         font-size: 0.8rem;
@@ -238,6 +242,9 @@ footer > div {
     .sectionTitleShape {
         /* TODO ssmaller */
     }
+    #footerLinks {
+        justify-content: start;
+    }
     #footerContainer {
         flex-direction: column;
     }
@@ -246,7 +253,16 @@ footer > div {
     }
     #footerAbout {
         order: initial;
-        margin-top: 1.5rem;
+        margin-top: 2rem;
+    }
+    #footerContainer h2 {
+        border: none;
+    }
+    #footerAbout p {
+        margin: .5rem 0;
+    }
+    #footerLinks a {
+        margin-right: 1rem;
     }
 
 }
