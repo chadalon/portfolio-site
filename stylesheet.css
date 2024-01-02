@@ -107,14 +107,28 @@ section a {
     box-shadow: -100px 200px 100px rgba(255, 255, 255, .9)
 } */
 .skill {
-    display: inline-block;
-    border-radius: .4rem;
-    background-color: #bbb;
-    margin: .5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #eee;
+    margin: .5rem 0;
+    padding: 0 .5rem;
+    min-width: 220px;
+    max-width: 315px;
 }
-.skill span {
-    padding: 1rem;
+.rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 8em;
+}
+.fs, .es {
     display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 1px solid black;
+}
+.fs {
+    background-color: black;
 }
 #projects .sectionDesc {
     margin: 0;

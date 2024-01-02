@@ -16,4 +16,3 @@ function generateSkills() {
         document.getElementById('skillsContainer').appendChild(container);
     }
 }
-generateSkills();
