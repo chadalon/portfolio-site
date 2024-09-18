@@ -15,6 +15,8 @@
   --margin-under-section-desc: 60px;
   --blue-color: royalblue;
   --margin-above-item-desc: 5px;
+  --darkish: #222222;
+  --lessdark: #c1c1c1;
 }
 body {
   font-family: poppins-regular, Arial;
@@ -43,6 +45,14 @@ ul {
   display: flex;
   gap: 2vw;
   align-items: center;
+  justify-content: center;
+}
+.wackul {
+  list-style-type: square;
+  flex-wrap: wrap;
+}
+.wackul li {
+  margin-left: 20px;
 }
 li {
   float: left;
@@ -133,10 +143,14 @@ section a {
   display: inline-block;
   width: 1em;
   height: 1em;
-  border: 1px solid black;
 }
 .fs {
-  background-color: black;
+  background-color: var(--darkish);
+  border: 1px solid var(--darkish);
+}
+.es {
+  background-color: var(--lessdark);
+  border: 1px solid var(--lessdark);
 }
 #projects .sectionDesc {
   margin: 0;
