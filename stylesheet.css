@@ -12,11 +12,18 @@
 }
 :root {
   --link-height: 1em;
-  --margin-under-section-desc: 60px;
+  --margin-under-section-desc: 30px;
   --blue-color: royalblue;
   --margin-above-item-desc: 5px;
   --darkish: #222222;
   --lessdark: #c1c1c1;
+  --pic-width: 450px;
+}
+.anchor {
+  display: block;
+  height: 10vh;
+  margin-top: -10vh;
+  visibility: hidden;
 }
 body {
   font-family: poppins-regular, Arial;
@@ -43,7 +50,8 @@ ul {
   list-style-type: none;
   margin: 0;
   display: flex;
-  gap: 2vw;
+  column-gap: 2vw;
+  row-gap: 0.5rem;
   align-items: center;
   justify-content: center;
 }
@@ -97,7 +105,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10rem 0;
+  margin: 5rem 0 0 0;
 }
 section a {
   color: var(--blue-color);
@@ -152,15 +160,15 @@ section a {
   background-color: var(--lessdark);
   border: 1px solid var(--lessdark);
 }
-#projects .sectionDesc {
-  margin: 0;
-}
 #projectsContainer > p {
   margin-top: var(--margin-under-section-desc);
 }
 .project {
   display: flex;
   margin-top: var(--margin-under-section-desc);
+}
+.project:first-child {
+  margin-top: 0;
 }
 .projectDesc {
   display: flex;
@@ -181,13 +189,16 @@ section a {
 }
 .hobbyimgs {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 .hobbyimgs img {
-  max-height: 450px;
+  width: var(--pic-width);
   max-width: 100%;
   margin: 30px 0;
+}
+.hobbyimgs img:nth-child(2) {
+  margin-left: calc(100% - var(--pic-width) * 2);
 }
 footer {
   background-color: black;
@@ -196,6 +207,7 @@ footer {
   flex-direction: column;
   padding: 5rem 3rem 0rem 3rem;
   align-items: center;
+  margin-top: 5rem;
 }
 footer > div {
   width: 100%;
@@ -260,6 +272,12 @@ footer > div {
     max-width: 1100px;
   }
 }
+@media only screen and (max-width: 1120px) {
+  .hobbyimgs img {
+    width: 47%;
+    /* margin: 30px auto; */
+  }
+}
 @media only screen and (max-width: 950px) {
   #name {
     font-size: 13vw;
@@ -272,6 +290,13 @@ footer > div {
   section {
     padding: 0 10vw;
     margin: 5rem 0;
+  }
+  .hobbyimgs img {
+    width: 100%;
+    height: auto;
+  }
+  .hobbyimgs img:nth-child(2) {
+    margin-left: 0;
   }
 }
 @media only screen and (max-width: 450px) {
