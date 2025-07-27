@@ -10,7 +10,7 @@
     <meta name="author" content="Chad Malmrose" />
     <title>Chad Malmrose</title>
     <link rel="stylesheet" href="stylesheet.css" />
-    <script src="./main.js" defer></script>
+    <!-- <script src="./main.js" defer></script> -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -57,18 +57,19 @@
         <div id="aboutDesc">
           <h2>Bio</h2>
           <p>
-            Hello! I'm Chad, a computer science student and software engineer
-            who loves trying new things. Coding has interested me since I first
-            heard about it, realizing I definitely had to pursue software
-            development after my parents bought me "Computer Programming for
-            Dummies" in 7th grade. I love to design and implement programs, fix
-            things, work with people, and learn!
+            Hello! I'm Chad, a Utah-based computer science student and software
+            engineer who loves trying new things. Coding has interested me since
+            I first heard about it, realizing I definitely had to pursue
+            software engineering after my parents bought me "Computer
+            Programming for Dummies" in 7th grade. I love to design and
+            implement programs, fix things, work with people, and learn!
           </p>
           <p>
-            My career goals include a job that can allow me to push myself,
-            coordinate with other people, and contribute to something impactful,
-            all while fully utilizing my skills.
+            My career goals include a job that will allow me to contribute to
+            something impactful, collaborate with other people, and keep
+            learning, all while fully utilizing my skills.
           </p>
+          <p>Also - yes, the rumors are true, I am an Emacs guy. 😈</p>
           <p>
             Let's connect on
             <a href="https://linkedin.com/in/chadmalmrose">Linkedin</a>!
@@ -77,68 +78,132 @@
         <div id="skills">
           <h2>Hard Skills</h2>
           <p>
-            Here are some of my technical skills. Each one has a super accurate
-            scientific rating based on my quantified experience level:
+            Here are some of my technical skills. They are not exhaustive; I am
+            happy to discuss more about what I have worked on. (hover/tap a logo
+            to see where I've demonstrated its abilities):
           </p>
-          <div id="skillsContainer">
-            <div class="skill">
-              <span>C#</span>
-              <div class="rating">
-                <span class="fs"></span>
-                <span class="fs"></span>
-                <span class="fs"></span>
-                <span class="fs"></span>
-                <span class="fs"></span>
+          <h3>Languages</h3>
+          <div id="cards-container">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./media/c-sharp-c-seeklogo.svg" alt="C#" />
+                </div>
+                <div class="flip-card-back">
+                  <div class="flip-card-padding">
+                    <h3>C# Experience</h3>
+                    <h4><a href="#experiencesection">Wavetronix</a></h4>
+                    <ul>
+                      <li>MVVM WPF Application</li>
+                    </ul>
+                    <h4><a href="#projectssection">Personal Projects</a></h4>
+                    <ul>
+                      <li><a href="#S1FF">Studio One File Finder</a></li>
+                      <li>Algorithm Trading Program</li>
+                      <li>2+ Unity Games</li>
+                    </ul>
+                    <h4><a href="#educationsection">UVU Classes</a></h4>
+                    <ul>
+                      <li>C# Development</li>
+                      <li>Principles and Patterns of Software Design</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="skill">
-              <span>JavaScript</span>
-              <div class="rating">
-                <span class="fs"></span>
-                <span class="fs"></span>
-                <span class="fs"></span>
-                <span class="fs"></span>
-                <span class="fs"></span>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./media/js.svg" alt="JavaScript" />
+                </div>
+                <div class="flip-card-back">
+                  <div class="flip-card-padding">
+                    <h3>JavaScript Experience</h3>
+                    <h4><a href="#experiencesection">Wavetronix</a></h4>
+                    <ul>
+                      <li>React.js Application With Neo4j Backend</li>
+                      <li>Scripts to Automate Tasks/Aid in Productivity</li>
+                    </ul>
+                    <h4><a href="#projectssection">Personal Projects</a></h4>
+                    <ul>
+                      <li><a href="#AlgoTrade">AlgoTrade</a></li>
+                      <li><a href="#blackjack">Blackjack Odds</a></li>
+                      <li>4+ Misc Projects</li>
+                    </ul>
+                    <h4><a href="#educationsection">UVU Classes</a></h4>
+                    <ul>
+                      <li>Web 1</li>
+                      <li>Discrete Math 1</li>
+                      <li>Data Privacy and Security</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="skill">
-              <span>Python</span>
-              <div class="rating">
-                <span class="fs"></span>
-                <span class="fs"></span>
-                <span class="fs"></span>
-                <span class="fs"></span>
-                <span class="es"></span>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./media/Python.svg" alt="Python" />
+                </div>
+                <div class="flip-card-back">
+                  <div class="flip-card-padding">
+                    <h3>Python Experience</h3>
+                    <h4><a href="#experiencesection">Wavetronix</a></h4>
+                    <ul>
+                      <li>Scripts to Automate Data Conversion</li>
+                    </ul>
+                    <h4><a href="#projectssection">Personal Projects</a></h4>
+                    <ul>
+                      <li>
+                        Cryptocurrency Trading and Backtesting Application
+                      </li>
+                    </ul>
+                    <h4><a href="#educationsection">UVU</a></h4>
+                    <ul>
+                      <li>8+ Courses</li>
+                      <li>Robotic Ping-Pong Table Project</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="skill">
-              <span>C++</span>
-              <div class="rating">
-                <span class="fs"></span>
-                <span class="fs"></span>
-                <span class="fs"></span>
-                <span class="fs"></span>
-                <span class="es"></span>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./media/CPlusPlus.svg" alt="C++" />
+                </div>
+                <div class="flip-card-back">
+                  <div class="flip-card-padding">
+                    <h3>C++ Experience</h3>
+                    <h4><a href="#projectssection">Personal Projects</a></h4>
+                    <ul>
+                      <li>VST Plugin Using the JUCE Framework</li>
+                    </ul>
+                    <h4><a href="#educationsection">UVU Classes</a></h4>
+                    <ul>
+                      <li>Intro to C++</li>
+                      <li>Data Structures and Algorithms</li>
+                      <li>Advanced High Performance Computer Architecture</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="skill">
-              <span>SQL</span>
-              <div class="rating">
-                <span class="fs"></span>
-                <span class="fs"></span>
-                <span class="fs"></span>
-                <span class="es"></span>
-                <span class="es"></span>
-              </div>
-            </div>
-            <div class="skill">
-              <span>C</span>
-              <div class="rating">
-                <span class="fs"></span>
-                <span class="fs"></span>
-                <span class="es"></span>
-                <span class="es"></span>
-                <span class="es"></span>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./media/C_Logo.svg" alt="C" />
+                </div>
+                <div class="flip-card-back">
+                  <div class="flip-card-padding">
+                    <h3>C Experience</h3>
+                    <h4><a href="#educationsection">UVU Classes</a></h4>
+                    <ul>
+                      <li>Operating Systems Theory</li>
+                      <li>Computer Networks 1 & 2</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -154,6 +219,7 @@
         <div class="project">
           <div class="projectImg"></div>
           <div class="projectDesc">
+            <span class="anchor" id="S1FF"></span>
             <u><h2 class="projectTitle">Studio One File Finder</h2></u>
             <p>
               Studio One File Finder is a .NET MAUI application for Windows and
@@ -177,6 +243,7 @@
         <div class="project">
           <div class="projectImg"></div>
           <div class="projectDesc">
+            <span class="anchor" id="blackjack"></span>
             <u><h2 class="projectTitle">Blackjack Odds</h2></u>
             <p>
               Blackjack Odds tests the best strategy to play given any
@@ -199,6 +266,7 @@
         <div class="project">
           <div class="projectImg"></div>
           <div class="projectDesc">
+            <span class="anchor" id="AlgoTrade"></span>
             <u><h2 class="projectTitle">AlgoTrade</h2></u>
             <p>
               An Electron app developed for designing and backtesting trading
@@ -253,6 +321,11 @@
             engineers to easily analyze and export crucial traffic data out in
             the field.
           </p>
+          <p>
+            In my second summer internship I worked on a small team of 2 to
+            investigate a new way of processing and representing data in our
+            products using a Neo4j graph database with a React.js frontend.
+          </p>
         </div>
       </div>
     </section>
@@ -269,9 +342,9 @@
             I am currently a senior at UVU pursuing a bachelor's degree in
             computer science. I came back to school for the spring 2022 semester
             after a two-year break, and since then I've achieved a 4.0 gpa all
-            seven semesters. I have been enjoying the projects and content in my
-            classes along with making lifelong connections with my professors
-            and classmates.
+            eight semesters (except for a B+ in American History). I have been
+            enjoying the projects and content in my classes along with making
+            lifelong connections with my professors and classmates.
           </p>
         </div>
       </div>

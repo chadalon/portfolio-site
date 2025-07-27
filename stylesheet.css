@@ -83,6 +83,7 @@ li {
   display: flex;
   justify-content: center;
   box-shadow: 0 10px 100px 15px rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
 header {
   background-color: white;
@@ -129,37 +130,11 @@ section a {
   color: #555;
   margin-top: var(--margin-above-item-desc);
 }
-/* #about {
-    box-shadow: -100px 200px 100px rgba(255, 255, 255, .9)
-} */
-.skill {
+#cards-container {
   display: flex;
-  justify-content: space-between;
-  background-color: #eee;
-  margin: 0.5rem 0;
-  padding: 0 0.5rem;
-  min-width: 220px;
-  max-width: 315px;
-}
-.rating {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-width: 8em;
-}
-.fs,
-.es {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-}
-.fs {
-  background-color: var(--darkish);
-  border: 1px solid var(--darkish);
-}
-.es {
-  background-color: var(--lessdark);
-  border: 1px solid var(--lessdark);
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: space-evenly;
 }
 #projectsContainer > p {
   margin-top: var(--margin-under-section-desc);
@@ -260,6 +235,88 @@ footer > div {
 }
 #bottomFooter span {
   margin: 2rem 0;
+}
+
+/* Help taken from https://www.w3schools.com/howto/howto_css_flip_card.asp */
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 325px;
+  height: 325px;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Horizontal flip */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  border-radius: 10px;
+  /* border: 2px solid #ddd; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+.flip-card-padding {
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  padding: 20px;
+}
+.flip-card-padding ul a,
+.flip-card-padding h4 a {
+  color: #fefefe;
+  text-decoration: underline;
+}
+.flip-card-front img {
+  height: 100%;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  /* background-color: #eee; */
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  /* background-color: rgb(57, 183, 255); */
+  background-color: var(--blue-color);
+  color: #fefefe;
+  transform: rotateY(180deg);
+}
+.flip-card-padding h4 {
+  margin: 0px;
+}
+.flip-card-padding h3 {
+  margin: 0px 0px 10px 0px;
+}
+.flip-card-padding ul {
+  column-gap: 0.6rem;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+.flip-card-padding ul li {
+  font-size: 0.8em;
+  flex-shrink: 1;
+}
+.flip-card-padding ul li::before {
+  content: "•\00a0";
 }
 
 @media only screen and (min-width: 1200px) {
