@@ -157,9 +157,9 @@ section a {
   border-radius: 5px;
   align-self: start;
 }
-/*.job {
-    display: flex;
-}*/
+.job {
+  margin-bottom: 30px;
+}
 .hobby {
   width: 100%;
 }
